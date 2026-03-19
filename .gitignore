@@ -1,0 +1,12 @@
+# Foldery IDE
+.idea/
+*.iml
+
+# Foldery kompilacji
+bin/
+target/
+
+# Pliki tymczasowe
+*.class
+*.log
+*.tmp
