@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-public class defaultCountingOutRhymer {
+public class DefaultCountingOutRhymer {
 
     public static final int CAPACITY = 12;
     public static final int UNINITIALIZED_TOTAL = -1;
