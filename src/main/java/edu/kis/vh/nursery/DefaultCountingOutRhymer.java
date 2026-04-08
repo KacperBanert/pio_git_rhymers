@@ -3,12 +3,12 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
     public static final int CAPACITY = 12;
-    public static final int UNINITIALIZED_TOTAL = -1;
+    private static final int UNINITIALIZED_TOTAL = -1;
     public static final int EMPTY = -1;
+
     private final int[] numbers = new int[CAPACITY];
 
-    public int total = UNINITIALIZED_TOTAL;
-
+    private int total = UNINITIALIZED_TOTAL;
 
     public void countIn(int in) {
         if (!isFull())
@@ -33,6 +33,10 @@ public class DefaultCountingOutRhymer {
         if (callCheck())
             return EMPTY;
         return numbers[total--];
+    }
+
+    public int getTotal() {
+        return total;
     }
 
 }
