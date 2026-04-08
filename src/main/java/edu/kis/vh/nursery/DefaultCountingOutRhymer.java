@@ -5,10 +5,10 @@ public class DefaultCountingOutRhymer {
     public static final int CAPACITY = 12;
     private static final int UNINITIALIZED_TOTAL = -1;
     public static final int EMPTY = -1;
+
     private final int[] numbers = new int[CAPACITY];
 
     public int total = UNINITIALIZED_TOTAL;
-
 
     public void countIn(int in) {
         if (!isFull())
@@ -35,4 +35,11 @@ public class DefaultCountingOutRhymer {
         return numbers[total--];
     }
 
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
 }
