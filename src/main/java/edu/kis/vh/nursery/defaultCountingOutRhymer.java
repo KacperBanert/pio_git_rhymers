@@ -3,7 +3,7 @@ package edu.kis.vh.nursery;
 /**
  * Klasa reprezentująca stos liczb całkowitych o stałej pojemności CAPACITY
  */
-public class DefaultCountingOutRhymer {
+public class defaultCountingOutRhymer {
 
     public static final int CAPACITY = 12;
     private static final int UNINITIALIZED_TOTAL = -1;
